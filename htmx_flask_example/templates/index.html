@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Misol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+</head>
+<body>
+    <h1>HTMX Misol</h1>
+    <form hx-post="/submit" hx-target="#result" hx-swap="outerHTML">
+        <label for="name">Ismingiz:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Yuborish</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>

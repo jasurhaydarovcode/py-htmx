@@ -1,0 +1,11 @@
+{
+  "name": "htmx",
+  "version": "1.0.0",
+  "description": "htmx",
+  "main": "index.js",
+  "scripts": {
+    "start": "python app.py"
+  },
+  "author": "Jasur",
+  "license": "ISC"
+}
